@@ -14,6 +14,8 @@ class AuthEpics {
       TypedEpic<AppState, CreateUserStart>(_createUserStart),
       TypedEpic<AppState, LoginStart>(_loginStart),
       TypedEpic<AppState, UpdateUsernameStart>(_updateUsernameStart),
+      TypedEpic<AppState, UpdatePhotoStart>(_updatePhotoStart),
+      TypedEpic<AppState, UpdatePasswordStart>(_updatePasswordStart),
       TypedEpic<AppState, LogoutStart>(_logoutStart),
     ]);
   }
@@ -44,6 +46,24 @@ class AuthEpics {
           .asyncMap((_) => api.updateName(name: action.name))
           .map((AppUser user) => UpdateUsername.successful(user))
           .onErrorReturnWith((Object error, StackTrace stackTrace) => UpdateUsername.error(error, stackTrace));
+    });
+  }
+
+  Stream<dynamic> _updatePhotoStart(Stream<UpdatePhotoStart> actions, EpicStore<AppState> store) {
+    return actions.flatMap((UpdatePhotoStart action) {
+      return Stream<void>.value(null) //
+          .asyncMap((_) => api.updatePhoto(url: action.url))
+          .map((AppUser user) => UpdatePhoto.successful(user))
+          .onErrorReturnWith((Object error, StackTrace stackTrace) => UpdatePhoto.error(error, stackTrace));
+    });
+  }
+
+  Stream<dynamic> _updatePasswordStart(Stream<UpdatePasswordStart> actions, EpicStore<AppState> store) {
+    return actions.flatMap((UpdatePasswordStart action) {
+      return Stream<void>.value(null) //
+          .asyncMap((_) => api.updatePassword(password: action.password))
+          .map((_) => const UpdatePassword.successful())
+          .onErrorReturnWith((Object error, StackTrace stackTrace) => UpdatePassword.error(error, stackTrace));
     });
   }
 

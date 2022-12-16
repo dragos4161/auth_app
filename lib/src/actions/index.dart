@@ -13,4 +13,8 @@ part 'create_user.dart';
 
 part 'update_username.dart';
 
+part 'update_photo.dart';
+
+part 'update_password.dart';
+
 typedef ActionResponse = void Function(dynamic action);

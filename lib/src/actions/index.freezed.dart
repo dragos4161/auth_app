@@ -1961,3 +1961,955 @@ abstract class UpdateUsernameError implements UpdateUsername {
   @JsonKey(ignore: true)
   _$$UpdateUsernameErrorCopyWith<_$UpdateUsernameError> get copyWith => throw _privateConstructorUsedError;
 }
+
+/// @nodoc
+mixin _$UpdatePhoto {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String url) $default, {
+    required TResult Function(AppUser user) successful,
+    required TResult Function(Object error, StackTrace stackTrace) error,
+  }) =>
+      throw _privateConstructorUsedError;
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String url)? $default, {
+    TResult? Function(AppUser user)? successful,
+    TResult? Function(Object error, StackTrace stackTrace)? error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String url)? $default, {
+    TResult Function(AppUser user)? successful,
+    TResult Function(Object error, StackTrace stackTrace)? error,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(UpdatePhotoStart value) $default, {
+    required TResult Function(UpdatePhotoSuccessful value) successful,
+    required TResult Function(UpdatePhotoError value) error,
+  }) =>
+      throw _privateConstructorUsedError;
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(UpdatePhotoStart value)? $default, {
+    TResult? Function(UpdatePhotoSuccessful value)? successful,
+    TResult? Function(UpdatePhotoError value)? error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(UpdatePhotoStart value)? $default, {
+    TResult Function(UpdatePhotoSuccessful value)? successful,
+    TResult Function(UpdatePhotoError value)? error,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $UpdatePhotoCopyWith<$Res> {
+  factory $UpdatePhotoCopyWith(UpdatePhoto value, $Res Function(UpdatePhoto) then) =
+      _$UpdatePhotoCopyWithImpl<$Res, UpdatePhoto>;
+}
+
+/// @nodoc
+class _$UpdatePhotoCopyWithImpl<$Res, $Val extends UpdatePhoto> implements $UpdatePhotoCopyWith<$Res> {
+  _$UpdatePhotoCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$UpdatePhotoStartCopyWith<$Res> {
+  factory _$$UpdatePhotoStartCopyWith(_$UpdatePhotoStart value, $Res Function(_$UpdatePhotoStart) then) =
+      __$$UpdatePhotoStartCopyWithImpl<$Res>;
+
+  @useResult
+  $Res call({String url});
+}
+
+/// @nodoc
+class __$$UpdatePhotoStartCopyWithImpl<$Res> extends _$UpdatePhotoCopyWithImpl<$Res, _$UpdatePhotoStart>
+    implements _$$UpdatePhotoStartCopyWith<$Res> {
+  __$$UpdatePhotoStartCopyWithImpl(_$UpdatePhotoStart _value, $Res Function(_$UpdatePhotoStart) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? url = null,
+  }) {
+    return _then(_$UpdatePhotoStart(
+      url: null == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$UpdatePhotoStart implements UpdatePhotoStart {
+  const _$UpdatePhotoStart({required this.url});
+
+  @override
+  final String url;
+
+  @override
+  String toString() {
+    return 'UpdatePhoto(url: $url)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UpdatePhotoStart &&
+            (identical(other.url, url) || other.url == url));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, url);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UpdatePhotoStartCopyWith<_$UpdatePhotoStart> get copyWith =>
+      __$$UpdatePhotoStartCopyWithImpl<_$UpdatePhotoStart>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String url) $default, {
+    required TResult Function(AppUser user) successful,
+    required TResult Function(Object error, StackTrace stackTrace) error,
+  }) {
+    return $default(url);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String url)? $default, {
+    TResult? Function(AppUser user)? successful,
+    TResult? Function(Object error, StackTrace stackTrace)? error,
+  }) {
+    return $default?.call(url);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String url)? $default, {
+    TResult Function(AppUser user)? successful,
+    TResult Function(Object error, StackTrace stackTrace)? error,
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(url);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(UpdatePhotoStart value) $default, {
+    required TResult Function(UpdatePhotoSuccessful value) successful,
+    required TResult Function(UpdatePhotoError value) error,
+  }) {
+    return $default(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(UpdatePhotoStart value)? $default, {
+    TResult? Function(UpdatePhotoSuccessful value)? successful,
+    TResult? Function(UpdatePhotoError value)? error,
+  }) {
+    return $default?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(UpdatePhotoStart value)? $default, {
+    TResult Function(UpdatePhotoSuccessful value)? successful,
+    TResult Function(UpdatePhotoError value)? error,
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdatePhotoStart implements UpdatePhoto {
+  const factory UpdatePhotoStart({required final String url}) = _$UpdatePhotoStart;
+
+  String get url;
+
+  @JsonKey(ignore: true)
+  _$$UpdatePhotoStartCopyWith<_$UpdatePhotoStart> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$UpdatePhotoSuccessfulCopyWith<$Res> {
+  factory _$$UpdatePhotoSuccessfulCopyWith(_$UpdatePhotoSuccessful value, $Res Function(_$UpdatePhotoSuccessful) then) =
+      __$$UpdatePhotoSuccessfulCopyWithImpl<$Res>;
+
+  @useResult
+  $Res call({AppUser user});
+
+  $AppUserCopyWith<$Res> get user;
+}
+
+/// @nodoc
+class __$$UpdatePhotoSuccessfulCopyWithImpl<$Res> extends _$UpdatePhotoCopyWithImpl<$Res, _$UpdatePhotoSuccessful>
+    implements _$$UpdatePhotoSuccessfulCopyWith<$Res> {
+  __$$UpdatePhotoSuccessfulCopyWithImpl(_$UpdatePhotoSuccessful _value, $Res Function(_$UpdatePhotoSuccessful) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? user = null,
+  }) {
+    return _then(_$UpdatePhotoSuccessful(
+      null == user
+          ? _value.user
+          : user // ignore: cast_nullable_to_non_nullable
+              as AppUser,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $AppUserCopyWith<$Res> get user {
+    return $AppUserCopyWith<$Res>(_value.user, (value) {
+      return _then(_value.copyWith(user: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$UpdatePhotoSuccessful implements UpdatePhotoSuccessful {
+  const _$UpdatePhotoSuccessful(this.user);
+
+  @override
+  final AppUser user;
+
+  @override
+  String toString() {
+    return 'UpdatePhoto.successful(user: $user)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UpdatePhotoSuccessful &&
+            (identical(other.user, user) || other.user == user));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, user);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UpdatePhotoSuccessfulCopyWith<_$UpdatePhotoSuccessful> get copyWith =>
+      __$$UpdatePhotoSuccessfulCopyWithImpl<_$UpdatePhotoSuccessful>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String url) $default, {
+    required TResult Function(AppUser user) successful,
+    required TResult Function(Object error, StackTrace stackTrace) error,
+  }) {
+    return successful(user);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String url)? $default, {
+    TResult? Function(AppUser user)? successful,
+    TResult? Function(Object error, StackTrace stackTrace)? error,
+  }) {
+    return successful?.call(user);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String url)? $default, {
+    TResult Function(AppUser user)? successful,
+    TResult Function(Object error, StackTrace stackTrace)? error,
+    required TResult orElse(),
+  }) {
+    if (successful != null) {
+      return successful(user);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(UpdatePhotoStart value) $default, {
+    required TResult Function(UpdatePhotoSuccessful value) successful,
+    required TResult Function(UpdatePhotoError value) error,
+  }) {
+    return successful(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(UpdatePhotoStart value)? $default, {
+    TResult? Function(UpdatePhotoSuccessful value)? successful,
+    TResult? Function(UpdatePhotoError value)? error,
+  }) {
+    return successful?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(UpdatePhotoStart value)? $default, {
+    TResult Function(UpdatePhotoSuccessful value)? successful,
+    TResult Function(UpdatePhotoError value)? error,
+    required TResult orElse(),
+  }) {
+    if (successful != null) {
+      return successful(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdatePhotoSuccessful implements UpdatePhoto {
+  const factory UpdatePhotoSuccessful(final AppUser user) = _$UpdatePhotoSuccessful;
+
+  AppUser get user;
+
+  @JsonKey(ignore: true)
+  _$$UpdatePhotoSuccessfulCopyWith<_$UpdatePhotoSuccessful> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$UpdatePhotoErrorCopyWith<$Res> {
+  factory _$$UpdatePhotoErrorCopyWith(_$UpdatePhotoError value, $Res Function(_$UpdatePhotoError) then) =
+      __$$UpdatePhotoErrorCopyWithImpl<$Res>;
+
+  @useResult
+  $Res call({Object error, StackTrace stackTrace});
+}
+
+/// @nodoc
+class __$$UpdatePhotoErrorCopyWithImpl<$Res> extends _$UpdatePhotoCopyWithImpl<$Res, _$UpdatePhotoError>
+    implements _$$UpdatePhotoErrorCopyWith<$Res> {
+  __$$UpdatePhotoErrorCopyWithImpl(_$UpdatePhotoError _value, $Res Function(_$UpdatePhotoError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+    Object? stackTrace = null,
+  }) {
+    return _then(_$UpdatePhotoError(
+      null == error ? _value.error : error,
+      null == stackTrace
+          ? _value.stackTrace
+          : stackTrace // ignore: cast_nullable_to_non_nullable
+              as StackTrace,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$UpdatePhotoError implements UpdatePhotoError {
+  const _$UpdatePhotoError(this.error, this.stackTrace);
+
+  @override
+  final Object error;
+  @override
+  final StackTrace stackTrace;
+
+  @override
+  String toString() {
+    return 'UpdatePhoto.error(error: $error, stackTrace: $stackTrace)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UpdatePhotoError &&
+            const DeepCollectionEquality().equals(other.error, error) &&
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UpdatePhotoErrorCopyWith<_$UpdatePhotoError> get copyWith =>
+      __$$UpdatePhotoErrorCopyWithImpl<_$UpdatePhotoError>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String url) $default, {
+    required TResult Function(AppUser user) successful,
+    required TResult Function(Object error, StackTrace stackTrace) error,
+  }) {
+    return error(this.error, stackTrace);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String url)? $default, {
+    TResult? Function(AppUser user)? successful,
+    TResult? Function(Object error, StackTrace stackTrace)? error,
+  }) {
+    return error?.call(this.error, stackTrace);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String url)? $default, {
+    TResult Function(AppUser user)? successful,
+    TResult Function(Object error, StackTrace stackTrace)? error,
+    required TResult orElse(),
+  }) {
+    if (error != null) {
+      return error(this.error, stackTrace);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(UpdatePhotoStart value) $default, {
+    required TResult Function(UpdatePhotoSuccessful value) successful,
+    required TResult Function(UpdatePhotoError value) error,
+  }) {
+    return error(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(UpdatePhotoStart value)? $default, {
+    TResult? Function(UpdatePhotoSuccessful value)? successful,
+    TResult? Function(UpdatePhotoError value)? error,
+  }) {
+    return error?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(UpdatePhotoStart value)? $default, {
+    TResult Function(UpdatePhotoSuccessful value)? successful,
+    TResult Function(UpdatePhotoError value)? error,
+    required TResult orElse(),
+  }) {
+    if (error != null) {
+      return error(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdatePhotoError implements UpdatePhoto {
+  const factory UpdatePhotoError(final Object error, final StackTrace stackTrace) = _$UpdatePhotoError;
+
+  Object get error;
+
+  StackTrace get stackTrace;
+
+  @JsonKey(ignore: true)
+  _$$UpdatePhotoErrorCopyWith<_$UpdatePhotoError> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+mixin _$UpdatePassword {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String password) $default, {
+    required TResult Function() successful,
+    required TResult Function(Object error, StackTrace stackTrace) error,
+  }) =>
+      throw _privateConstructorUsedError;
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String password)? $default, {
+    TResult? Function()? successful,
+    TResult? Function(Object error, StackTrace stackTrace)? error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String password)? $default, {
+    TResult Function()? successful,
+    TResult Function(Object error, StackTrace stackTrace)? error,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(UpdatePasswordStart value) $default, {
+    required TResult Function(UpdatePasswordSuccessful value) successful,
+    required TResult Function(UpdatePasswordError value) error,
+  }) =>
+      throw _privateConstructorUsedError;
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(UpdatePasswordStart value)? $default, {
+    TResult? Function(UpdatePasswordSuccessful value)? successful,
+    TResult? Function(UpdatePasswordError value)? error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(UpdatePasswordStart value)? $default, {
+    TResult Function(UpdatePasswordSuccessful value)? successful,
+    TResult Function(UpdatePasswordError value)? error,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $UpdatePasswordCopyWith<$Res> {
+  factory $UpdatePasswordCopyWith(UpdatePassword value, $Res Function(UpdatePassword) then) =
+      _$UpdatePasswordCopyWithImpl<$Res, UpdatePassword>;
+}
+
+/// @nodoc
+class _$UpdatePasswordCopyWithImpl<$Res, $Val extends UpdatePassword> implements $UpdatePasswordCopyWith<$Res> {
+  _$UpdatePasswordCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$UpdatePasswordStartCopyWith<$Res> {
+  factory _$$UpdatePasswordStartCopyWith(_$UpdatePasswordStart value, $Res Function(_$UpdatePasswordStart) then) =
+      __$$UpdatePasswordStartCopyWithImpl<$Res>;
+
+  @useResult
+  $Res call({String password});
+}
+
+/// @nodoc
+class __$$UpdatePasswordStartCopyWithImpl<$Res> extends _$UpdatePasswordCopyWithImpl<$Res, _$UpdatePasswordStart>
+    implements _$$UpdatePasswordStartCopyWith<$Res> {
+  __$$UpdatePasswordStartCopyWithImpl(_$UpdatePasswordStart _value, $Res Function(_$UpdatePasswordStart) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? password = null,
+  }) {
+    return _then(_$UpdatePasswordStart(
+      password: null == password
+          ? _value.password
+          : password // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$UpdatePasswordStart implements UpdatePasswordStart {
+  const _$UpdatePasswordStart({required this.password});
+
+  @override
+  final String password;
+
+  @override
+  String toString() {
+    return 'UpdatePassword(password: $password)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UpdatePasswordStart &&
+            (identical(other.password, password) || other.password == password));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, password);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UpdatePasswordStartCopyWith<_$UpdatePasswordStart> get copyWith =>
+      __$$UpdatePasswordStartCopyWithImpl<_$UpdatePasswordStart>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String password) $default, {
+    required TResult Function() successful,
+    required TResult Function(Object error, StackTrace stackTrace) error,
+  }) {
+    return $default(password);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String password)? $default, {
+    TResult? Function()? successful,
+    TResult? Function(Object error, StackTrace stackTrace)? error,
+  }) {
+    return $default?.call(password);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String password)? $default, {
+    TResult Function()? successful,
+    TResult Function(Object error, StackTrace stackTrace)? error,
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(password);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(UpdatePasswordStart value) $default, {
+    required TResult Function(UpdatePasswordSuccessful value) successful,
+    required TResult Function(UpdatePasswordError value) error,
+  }) {
+    return $default(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(UpdatePasswordStart value)? $default, {
+    TResult? Function(UpdatePasswordSuccessful value)? successful,
+    TResult? Function(UpdatePasswordError value)? error,
+  }) {
+    return $default?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(UpdatePasswordStart value)? $default, {
+    TResult Function(UpdatePasswordSuccessful value)? successful,
+    TResult Function(UpdatePasswordError value)? error,
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdatePasswordStart implements UpdatePassword {
+  const factory UpdatePasswordStart({required final String password}) = _$UpdatePasswordStart;
+
+  String get password;
+
+  @JsonKey(ignore: true)
+  _$$UpdatePasswordStartCopyWith<_$UpdatePasswordStart> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$UpdatePasswordSuccessfulCopyWith<$Res> {
+  factory _$$UpdatePasswordSuccessfulCopyWith(
+          _$UpdatePasswordSuccessful value, $Res Function(_$UpdatePasswordSuccessful) then) =
+      __$$UpdatePasswordSuccessfulCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$UpdatePasswordSuccessfulCopyWithImpl<$Res>
+    extends _$UpdatePasswordCopyWithImpl<$Res, _$UpdatePasswordSuccessful>
+    implements _$$UpdatePasswordSuccessfulCopyWith<$Res> {
+  __$$UpdatePasswordSuccessfulCopyWithImpl(
+      _$UpdatePasswordSuccessful _value, $Res Function(_$UpdatePasswordSuccessful) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$UpdatePasswordSuccessful implements UpdatePasswordSuccessful {
+  const _$UpdatePasswordSuccessful();
+
+  @override
+  String toString() {
+    return 'UpdatePassword.successful()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$UpdatePasswordSuccessful);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String password) $default, {
+    required TResult Function() successful,
+    required TResult Function(Object error, StackTrace stackTrace) error,
+  }) {
+    return successful();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String password)? $default, {
+    TResult? Function()? successful,
+    TResult? Function(Object error, StackTrace stackTrace)? error,
+  }) {
+    return successful?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String password)? $default, {
+    TResult Function()? successful,
+    TResult Function(Object error, StackTrace stackTrace)? error,
+    required TResult orElse(),
+  }) {
+    if (successful != null) {
+      return successful();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(UpdatePasswordStart value) $default, {
+    required TResult Function(UpdatePasswordSuccessful value) successful,
+    required TResult Function(UpdatePasswordError value) error,
+  }) {
+    return successful(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(UpdatePasswordStart value)? $default, {
+    TResult? Function(UpdatePasswordSuccessful value)? successful,
+    TResult? Function(UpdatePasswordError value)? error,
+  }) {
+    return successful?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(UpdatePasswordStart value)? $default, {
+    TResult Function(UpdatePasswordSuccessful value)? successful,
+    TResult Function(UpdatePasswordError value)? error,
+    required TResult orElse(),
+  }) {
+    if (successful != null) {
+      return successful(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdatePasswordSuccessful implements UpdatePassword {
+  const factory UpdatePasswordSuccessful() = _$UpdatePasswordSuccessful;
+}
+
+/// @nodoc
+abstract class _$$UpdatePasswordErrorCopyWith<$Res> {
+  factory _$$UpdatePasswordErrorCopyWith(_$UpdatePasswordError value, $Res Function(_$UpdatePasswordError) then) =
+      __$$UpdatePasswordErrorCopyWithImpl<$Res>;
+
+  @useResult
+  $Res call({Object error, StackTrace stackTrace});
+}
+
+/// @nodoc
+class __$$UpdatePasswordErrorCopyWithImpl<$Res> extends _$UpdatePasswordCopyWithImpl<$Res, _$UpdatePasswordError>
+    implements _$$UpdatePasswordErrorCopyWith<$Res> {
+  __$$UpdatePasswordErrorCopyWithImpl(_$UpdatePasswordError _value, $Res Function(_$UpdatePasswordError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+    Object? stackTrace = null,
+  }) {
+    return _then(_$UpdatePasswordError(
+      null == error ? _value.error : error,
+      null == stackTrace
+          ? _value.stackTrace
+          : stackTrace // ignore: cast_nullable_to_non_nullable
+              as StackTrace,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$UpdatePasswordError implements UpdatePasswordError {
+  const _$UpdatePasswordError(this.error, this.stackTrace);
+
+  @override
+  final Object error;
+  @override
+  final StackTrace stackTrace;
+
+  @override
+  String toString() {
+    return 'UpdatePassword.error(error: $error, stackTrace: $stackTrace)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UpdatePasswordError &&
+            const DeepCollectionEquality().equals(other.error, error) &&
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UpdatePasswordErrorCopyWith<_$UpdatePasswordError> get copyWith =>
+      __$$UpdatePasswordErrorCopyWithImpl<_$UpdatePasswordError>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String password) $default, {
+    required TResult Function() successful,
+    required TResult Function(Object error, StackTrace stackTrace) error,
+  }) {
+    return error(this.error, stackTrace);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String password)? $default, {
+    TResult? Function()? successful,
+    TResult? Function(Object error, StackTrace stackTrace)? error,
+  }) {
+    return error?.call(this.error, stackTrace);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String password)? $default, {
+    TResult Function()? successful,
+    TResult Function(Object error, StackTrace stackTrace)? error,
+    required TResult orElse(),
+  }) {
+    if (error != null) {
+      return error(this.error, stackTrace);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(UpdatePasswordStart value) $default, {
+    required TResult Function(UpdatePasswordSuccessful value) successful,
+    required TResult Function(UpdatePasswordError value) error,
+  }) {
+    return error(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(UpdatePasswordStart value)? $default, {
+    TResult? Function(UpdatePasswordSuccessful value)? successful,
+    TResult? Function(UpdatePasswordError value)? error,
+  }) {
+    return error?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(UpdatePasswordStart value)? $default, {
+    TResult Function(UpdatePasswordSuccessful value)? successful,
+    TResult Function(UpdatePasswordError value)? error,
+    required TResult orElse(),
+  }) {
+    if (error != null) {
+      return error(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdatePasswordError implements UpdatePassword {
+  const factory UpdatePasswordError(final Object error, final StackTrace stackTrace) = _$UpdatePasswordError;
+
+  Object get error;
+
+  StackTrace get stackTrace;
+
+  @JsonKey(ignore: true)
+  _$$UpdatePasswordErrorCopyWith<_$UpdatePasswordError> get copyWith => throw _privateConstructorUsedError;
+}

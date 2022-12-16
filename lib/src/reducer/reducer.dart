@@ -12,7 +12,8 @@ Reducer<AppState> reducer = combineReducers(<Reducer<AppState>>[
     return state;
   },
   _reducer,
-  TypedReducer<AppState, LogoutSuccessful>(_logoutSuccessfull),
+  TypedReducer<AppState, LogoutSuccessful>(_logoutSuccessful),
+  TypedReducer<AppState, LogoutSuccessful>(_updatePasswordSuccessful),
 ]);
 
 AppState _reducer(AppState state, dynamic action) {
@@ -21,6 +22,10 @@ AppState _reducer(AppState state, dynamic action) {
   );
 }
 
-AppState _logoutSuccessfull(AppState state, LogoutSuccessful action) {
+AppState _logoutSuccessful(AppState state, LogoutSuccessful action) {
+  return const AppState();
+}
+
+AppState _updatePasswordSuccessful(AppState state, LogoutSuccessful action) {
   return const AppState();
 }

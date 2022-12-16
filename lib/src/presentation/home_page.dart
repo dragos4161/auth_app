@@ -29,6 +29,16 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
+          body: SizedBox(
+            height: MediaQuery.of(context).size.width,
+            width: MediaQuery.of(context).size.width,
+            child: user.imageUrl == null
+                ? const SizedBox.shrink()
+                : Image.network(
+                    user.imageUrl!,
+                    fit: BoxFit.cover,
+                  ),
+          ),
         );
       },
     );

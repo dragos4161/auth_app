@@ -29,6 +29,7 @@ class AuthApi {
       uid: user.uid,
       email: email,
       displayName: user.displayName!,
+      imageUrl: user.photoURL,
     );
   }
 
@@ -42,7 +43,27 @@ class AuthApi {
       uid: user.uid,
       email: user.email!,
       displayName: displayName,
+      imageUrl: user.photoURL,
     );
+  }
+
+  Future<AppUser> updatePhoto({required String url}) async {
+    final User user = auth.currentUser!;
+
+    await user.updatePhotoURL(url);
+
+    return AppUser(
+      uid: user.uid,
+      email: user.email!,
+      displayName: user.displayName!,
+      imageUrl: url,
+    );
+  }
+
+  Future<void> updatePassword({required String password}) async {
+    final User user = auth.currentUser!;
+
+    await user.updatePassword(password);
   }
 
   Future<void> logout() async {

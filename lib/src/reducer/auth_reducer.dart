@@ -6,6 +6,7 @@ Reducer<AuthState> authReducer = combineReducers(<Reducer<AuthState>>[
   TypedReducer<AuthState, CreateUserSuccessful>(_createUserSuccessful),
   TypedReducer<AuthState, LoginSuccessful>(_loginSuccessful),
   TypedReducer<AuthState, UpdateUsernameSuccessful>(_updateUsernameSuccessful),
+  TypedReducer<AuthState, UpdatePhotoSuccessful>(_updatePhotoSuccessful),
 ]);
 
 AuthState _createUserSuccessful(AuthState state, CreateUserSuccessful action) {
@@ -21,6 +22,12 @@ AuthState _loginSuccessful(AuthState state, LoginSuccessful action) {
 }
 
 AuthState _updateUsernameSuccessful(AuthState state, UpdateUsernameSuccessful action) {
+  return state.copyWith(
+    user: action.user,
+  );
+}
+
+AuthState _updatePhotoSuccessful(AuthState state, UpdatePhotoSuccessful action) {
   return state.copyWith(
     user: action.user,
   );
