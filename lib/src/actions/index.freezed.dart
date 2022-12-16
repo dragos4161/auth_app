@@ -1462,3 +1462,502 @@ abstract class CreateUserError implements CreateUser {
   @JsonKey(ignore: true)
   _$$CreateUserErrorCopyWith<_$CreateUserError> get copyWith => throw _privateConstructorUsedError;
 }
+
+/// @nodoc
+mixin _$UpdateUsername {
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String name) $default, {
+    required TResult Function(AppUser user) successful,
+    required TResult Function(Object error, StackTrace stackTrace) error,
+  }) =>
+      throw _privateConstructorUsedError;
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String name)? $default, {
+    TResult? Function(AppUser user)? successful,
+    TResult? Function(Object error, StackTrace stackTrace)? error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String name)? $default, {
+    TResult Function(AppUser user)? successful,
+    TResult Function(Object error, StackTrace stackTrace)? error,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(UpdateUsernameStart value) $default, {
+    required TResult Function(UpdateUsernameSuccessful value) successful,
+    required TResult Function(UpdateUsernameError value) error,
+  }) =>
+      throw _privateConstructorUsedError;
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(UpdateUsernameStart value)? $default, {
+    TResult? Function(UpdateUsernameSuccessful value)? successful,
+    TResult? Function(UpdateUsernameError value)? error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(UpdateUsernameStart value)? $default, {
+    TResult Function(UpdateUsernameSuccessful value)? successful,
+    TResult Function(UpdateUsernameError value)? error,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $UpdateUsernameCopyWith<$Res> {
+  factory $UpdateUsernameCopyWith(UpdateUsername value, $Res Function(UpdateUsername) then) =
+      _$UpdateUsernameCopyWithImpl<$Res, UpdateUsername>;
+}
+
+/// @nodoc
+class _$UpdateUsernameCopyWithImpl<$Res, $Val extends UpdateUsername> implements $UpdateUsernameCopyWith<$Res> {
+  _$UpdateUsernameCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+}
+
+/// @nodoc
+abstract class _$$UpdateUsernameStartCopyWith<$Res> {
+  factory _$$UpdateUsernameStartCopyWith(_$UpdateUsernameStart value, $Res Function(_$UpdateUsernameStart) then) =
+      __$$UpdateUsernameStartCopyWithImpl<$Res>;
+
+  @useResult
+  $Res call({String name});
+}
+
+/// @nodoc
+class __$$UpdateUsernameStartCopyWithImpl<$Res> extends _$UpdateUsernameCopyWithImpl<$Res, _$UpdateUsernameStart>
+    implements _$$UpdateUsernameStartCopyWith<$Res> {
+  __$$UpdateUsernameStartCopyWithImpl(_$UpdateUsernameStart _value, $Res Function(_$UpdateUsernameStart) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? name = null,
+  }) {
+    return _then(_$UpdateUsernameStart(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$UpdateUsernameStart implements UpdateUsernameStart {
+  const _$UpdateUsernameStart({required this.name});
+
+  @override
+  final String name;
+
+  @override
+  String toString() {
+    return 'UpdateUsername(name: $name)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UpdateUsernameStart &&
+            (identical(other.name, name) || other.name == name));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, name);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UpdateUsernameStartCopyWith<_$UpdateUsernameStart> get copyWith =>
+      __$$UpdateUsernameStartCopyWithImpl<_$UpdateUsernameStart>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String name) $default, {
+    required TResult Function(AppUser user) successful,
+    required TResult Function(Object error, StackTrace stackTrace) error,
+  }) {
+    return $default(name);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String name)? $default, {
+    TResult? Function(AppUser user)? successful,
+    TResult? Function(Object error, StackTrace stackTrace)? error,
+  }) {
+    return $default?.call(name);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String name)? $default, {
+    TResult Function(AppUser user)? successful,
+    TResult Function(Object error, StackTrace stackTrace)? error,
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(name);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(UpdateUsernameStart value) $default, {
+    required TResult Function(UpdateUsernameSuccessful value) successful,
+    required TResult Function(UpdateUsernameError value) error,
+  }) {
+    return $default(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(UpdateUsernameStart value)? $default, {
+    TResult? Function(UpdateUsernameSuccessful value)? successful,
+    TResult? Function(UpdateUsernameError value)? error,
+  }) {
+    return $default?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(UpdateUsernameStart value)? $default, {
+    TResult Function(UpdateUsernameSuccessful value)? successful,
+    TResult Function(UpdateUsernameError value)? error,
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdateUsernameStart implements UpdateUsername {
+  const factory UpdateUsernameStart({required final String name}) = _$UpdateUsernameStart;
+
+  String get name;
+
+  @JsonKey(ignore: true)
+  _$$UpdateUsernameStartCopyWith<_$UpdateUsernameStart> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$UpdateUsernameSuccessfulCopyWith<$Res> {
+  factory _$$UpdateUsernameSuccessfulCopyWith(
+          _$UpdateUsernameSuccessful value, $Res Function(_$UpdateUsernameSuccessful) then) =
+      __$$UpdateUsernameSuccessfulCopyWithImpl<$Res>;
+
+  @useResult
+  $Res call({AppUser user});
+
+  $AppUserCopyWith<$Res> get user;
+}
+
+/// @nodoc
+class __$$UpdateUsernameSuccessfulCopyWithImpl<$Res>
+    extends _$UpdateUsernameCopyWithImpl<$Res, _$UpdateUsernameSuccessful>
+    implements _$$UpdateUsernameSuccessfulCopyWith<$Res> {
+  __$$UpdateUsernameSuccessfulCopyWithImpl(
+      _$UpdateUsernameSuccessful _value, $Res Function(_$UpdateUsernameSuccessful) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? user = null,
+  }) {
+    return _then(_$UpdateUsernameSuccessful(
+      null == user
+          ? _value.user
+          : user // ignore: cast_nullable_to_non_nullable
+              as AppUser,
+    ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $AppUserCopyWith<$Res> get user {
+    return $AppUserCopyWith<$Res>(_value.user, (value) {
+      return _then(_value.copyWith(user: value));
+    });
+  }
+}
+
+/// @nodoc
+
+class _$UpdateUsernameSuccessful implements UpdateUsernameSuccessful {
+  const _$UpdateUsernameSuccessful(this.user);
+
+  @override
+  final AppUser user;
+
+  @override
+  String toString() {
+    return 'UpdateUsername.successful(user: $user)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UpdateUsernameSuccessful &&
+            (identical(other.user, user) || other.user == user));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, user);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UpdateUsernameSuccessfulCopyWith<_$UpdateUsernameSuccessful> get copyWith =>
+      __$$UpdateUsernameSuccessfulCopyWithImpl<_$UpdateUsernameSuccessful>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String name) $default, {
+    required TResult Function(AppUser user) successful,
+    required TResult Function(Object error, StackTrace stackTrace) error,
+  }) {
+    return successful(user);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String name)? $default, {
+    TResult? Function(AppUser user)? successful,
+    TResult? Function(Object error, StackTrace stackTrace)? error,
+  }) {
+    return successful?.call(user);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String name)? $default, {
+    TResult Function(AppUser user)? successful,
+    TResult Function(Object error, StackTrace stackTrace)? error,
+    required TResult orElse(),
+  }) {
+    if (successful != null) {
+      return successful(user);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(UpdateUsernameStart value) $default, {
+    required TResult Function(UpdateUsernameSuccessful value) successful,
+    required TResult Function(UpdateUsernameError value) error,
+  }) {
+    return successful(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(UpdateUsernameStart value)? $default, {
+    TResult? Function(UpdateUsernameSuccessful value)? successful,
+    TResult? Function(UpdateUsernameError value)? error,
+  }) {
+    return successful?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(UpdateUsernameStart value)? $default, {
+    TResult Function(UpdateUsernameSuccessful value)? successful,
+    TResult Function(UpdateUsernameError value)? error,
+    required TResult orElse(),
+  }) {
+    if (successful != null) {
+      return successful(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdateUsernameSuccessful implements UpdateUsername {
+  const factory UpdateUsernameSuccessful(final AppUser user) = _$UpdateUsernameSuccessful;
+
+  AppUser get user;
+
+  @JsonKey(ignore: true)
+  _$$UpdateUsernameSuccessfulCopyWith<_$UpdateUsernameSuccessful> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$UpdateUsernameErrorCopyWith<$Res> {
+  factory _$$UpdateUsernameErrorCopyWith(_$UpdateUsernameError value, $Res Function(_$UpdateUsernameError) then) =
+      __$$UpdateUsernameErrorCopyWithImpl<$Res>;
+
+  @useResult
+  $Res call({Object error, StackTrace stackTrace});
+}
+
+/// @nodoc
+class __$$UpdateUsernameErrorCopyWithImpl<$Res> extends _$UpdateUsernameCopyWithImpl<$Res, _$UpdateUsernameError>
+    implements _$$UpdateUsernameErrorCopyWith<$Res> {
+  __$$UpdateUsernameErrorCopyWithImpl(_$UpdateUsernameError _value, $Res Function(_$UpdateUsernameError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+    Object? stackTrace = null,
+  }) {
+    return _then(_$UpdateUsernameError(
+      null == error ? _value.error : error,
+      null == stackTrace
+          ? _value.stackTrace
+          : stackTrace // ignore: cast_nullable_to_non_nullable
+              as StackTrace,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$UpdateUsernameError implements UpdateUsernameError {
+  const _$UpdateUsernameError(this.error, this.stackTrace);
+
+  @override
+  final Object error;
+  @override
+  final StackTrace stackTrace;
+
+  @override
+  String toString() {
+    return 'UpdateUsername.error(error: $error, stackTrace: $stackTrace)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$UpdateUsernameError &&
+            const DeepCollectionEquality().equals(other.error, error) &&
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$UpdateUsernameErrorCopyWith<_$UpdateUsernameError> get copyWith =>
+      __$$UpdateUsernameErrorCopyWithImpl<_$UpdateUsernameError>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String name) $default, {
+    required TResult Function(AppUser user) successful,
+    required TResult Function(Object error, StackTrace stackTrace) error,
+  }) {
+    return error(this.error, stackTrace);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String name)? $default, {
+    TResult? Function(AppUser user)? successful,
+    TResult? Function(Object error, StackTrace stackTrace)? error,
+  }) {
+    return error?.call(this.error, stackTrace);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String name)? $default, {
+    TResult Function(AppUser user)? successful,
+    TResult Function(Object error, StackTrace stackTrace)? error,
+    required TResult orElse(),
+  }) {
+    if (error != null) {
+      return error(this.error, stackTrace);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(UpdateUsernameStart value) $default, {
+    required TResult Function(UpdateUsernameSuccessful value) successful,
+    required TResult Function(UpdateUsernameError value) error,
+  }) {
+    return error(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(UpdateUsernameStart value)? $default, {
+    TResult? Function(UpdateUsernameSuccessful value)? successful,
+    TResult? Function(UpdateUsernameError value)? error,
+  }) {
+    return error?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(UpdateUsernameStart value)? $default, {
+    TResult Function(UpdateUsernameSuccessful value)? successful,
+    TResult Function(UpdateUsernameError value)? error,
+    required TResult orElse(),
+  }) {
+    if (error != null) {
+      return error(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UpdateUsernameError implements UpdateUsername {
+  const factory UpdateUsernameError(final Object error, final StackTrace stackTrace) = _$UpdateUsernameError;
+
+  Object get error;
+
+  StackTrace get stackTrace;
+
+  @JsonKey(ignore: true)
+  _$$UpdateUsernameErrorCopyWith<_$UpdateUsernameError> get copyWith => throw _privateConstructorUsedError;
+}

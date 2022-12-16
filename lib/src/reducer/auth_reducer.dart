@@ -5,6 +5,7 @@ import 'package:redux/redux.dart';
 Reducer<AuthState> authReducer = combineReducers(<Reducer<AuthState>>[
   TypedReducer<AuthState, CreateUserSuccessful>(_createUserSuccessful),
   TypedReducer<AuthState, LoginSuccessful>(_loginSuccessful),
+  TypedReducer<AuthState, UpdateUsernameSuccessful>(_updateUsernameSuccessful),
 ]);
 
 AuthState _createUserSuccessful(AuthState state, CreateUserSuccessful action) {
@@ -14,6 +15,12 @@ AuthState _createUserSuccessful(AuthState state, CreateUserSuccessful action) {
 }
 
 AuthState _loginSuccessful(AuthState state, LoginSuccessful action) {
+  return state.copyWith(
+    user: action.user,
+  );
+}
+
+AuthState _updateUsernameSuccessful(AuthState state, UpdateUsernameSuccessful action) {
   return state.copyWith(
     user: action.user,
   );

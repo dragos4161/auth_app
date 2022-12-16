@@ -4,6 +4,7 @@ import 'package:auth_app/src/epics/app_epics.dart';
 import 'package:auth_app/src/models/index.dart';
 import 'package:auth_app/src/presentation/chat_page.dart';
 import 'package:auth_app/src/presentation/home.dart';
+import 'package:auth_app/src/presentation/profile_page.dart';
 import 'package:auth_app/src/reducer/reducer.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -45,6 +46,7 @@ class GroupApp extends StatelessWidget {
         routes: <String, WidgetBuilder>{
           '/': (BuildContext context) => const Home(),
           '/chat': (BuildContext context) => const ChatPage(),
+          '/profile': (BuildContext context) => const ProfilePage(),
         },
       ),
     );

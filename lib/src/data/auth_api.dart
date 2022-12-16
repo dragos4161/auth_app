@@ -32,6 +32,19 @@ class AuthApi {
     );
   }
 
+  Future<AppUser> updateName({required String name}) async {
+    final String displayName = name;
+    final User user = auth.currentUser!;
+
+    await user.updateDisplayName(displayName);
+
+    return AppUser(
+      uid: user.uid,
+      email: user.email!,
+      displayName: displayName,
+    );
+  }
+
   Future<void> logout() async {
     await auth.signOut();
   }

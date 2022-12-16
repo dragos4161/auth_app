@@ -11,4 +11,6 @@ part 'logout.dart';
 
 part 'create_user.dart';
 
+part 'update_username.dart';
+
 typedef ActionResponse = void Function(dynamic action);

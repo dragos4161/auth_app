@@ -17,6 +17,12 @@ class HomePage extends StatelessWidget {
             actions: <Widget>[
               IconButton(
                 onPressed: () {
+                  Navigator.of(context).pushNamed('/profile');
+                },
+                icon: const Icon(Icons.account_circle_outlined),
+              ),
+              IconButton(
+                onPressed: () {
                   StoreProvider.of<AppState>(context).dispatch(const Logout());
                 },
                 icon: const Icon(Icons.power_settings_new_outlined),

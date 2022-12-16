@@ -13,6 +13,7 @@ class AuthEpics {
     return combineEpics(<Epic<AppState>>[
       TypedEpic<AppState, CreateUserStart>(_createUserStart),
       TypedEpic<AppState, LoginStart>(_loginStart),
+      TypedEpic<AppState, UpdateUsernameStart>(_updateUsernameStart),
       TypedEpic<AppState, LogoutStart>(_logoutStart),
     ]);
   }
@@ -34,6 +35,15 @@ class AuthEpics {
           .map((AppUser user) => Login.successful(user))
           .onErrorReturnWith((Object error, StackTrace stackTrace) => Login.error(error, stackTrace))
           .doOnData(action.response);
+    });
+  }
+
+  Stream<dynamic> _updateUsernameStart(Stream<UpdateUsernameStart> actions, EpicStore<AppState> store) {
+    return actions.flatMap((UpdateUsernameStart action) {
+      return Stream<void>.value(null) //
+          .asyncMap((_) => api.updateName(name: action.name))
+          .map((AppUser user) => UpdateUsername.successful(user))
+          .onErrorReturnWith((Object error, StackTrace stackTrace) => UpdateUsername.error(error, stackTrace));
     });
   }
 
